@@ -1,0 +1,157 @@
+
+    <!doctype html>
+    <html>
+    <head>
+    <title>Goodreads Emotion Detection Corpus</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" type='text/css' href="static/goodreads.css">
+    <meta name="description" content="Our first page">
+    <meta name="keywords" content="html tutorial template">
+    </head>
+    <body>
+     <div  class="container-fluid">
+            <h1 id="website-title">Goodreads Emotion Detection Corpus</h1>
+    </div>
+    <br/>
+    <br/>
+    <div class="main-content container-fluid">
+          <div class="row center">
+              <div class="col-12">
+                  <h2>What is this corpus?</h3>
+              </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <span>
+                        This is a corpus that we have built using the book reviews from Goodreads.
+                        We have scraped the reviews for books along with the genre, the title, rating and
+                         the author. In order to build upon this data and create an annotated corpus, we
+                          have labelled the specific emotion of a review. These reviews can range from a 
+                          couple of sentences to a full paragraph with a maximum of 300 words. We have 
+                          focused only on English reviews. In order to narrow down the reviews that we 
+                          look at, we chose several distinct genres and, for each genre, we chose book, 
+                          scrap the reviews and then selected the books recommended by Goodreads in order 
+                          to find more reviews. This data has internal structure because along with the
+                            review, we can extract the book title, the author, genre and the rating given by
+                             the user. We have annotated this data using mechanical turks and each review is labelled as one of 
+                             the following emotions: enthusiastic, sad, bored, disappointed, content, 
+                              love, neutral. This corpus is of interest because the labelled emotions are distinct
+                               from the numbered review and also because it is domain specific because it is 
+                               text written about books. The results can be used by other people to train their
+                                models to recognize certain emotions. It would be interesting to see if
+                                 certain genres will have reviews with different associated emotions.
+
+                    </span>  
+                </div>
+            </div>
+            <br>
+            <div class="row center">
+                <div class="col-12">
+                    <h3>Corpus statistics</h3>
+                    These visualizations are representative of our entire annotated corpus. <br>
+                </div>
+              </div>
+              <div class="row">
+                  <div class="col-6">
+                      <img id="review-author" src="static/img/review_author.png">
+                  </div>
+                  <div class="col-6">
+                    <img id="review-author" src="static/img/review_genre.png">
+                      <span>
+                      </span>
+                  </div>
+              </div>
+              <br>
+              <br>
+              <div class="row">
+                <div class="col-6">
+                    <img id="review-author" src="static/img/review_rating.png">
+                </div>
+                <div class="col-6">
+                  <img id="review-author" src="static/img/review_ann.png">
+                    <span>
+                    </span>
+                </div>
+            </div>
+            <hr/>
+            <div class="row center">
+                <h2>Search our corpus</h3>
+            </div>
+            <div class="row center">
+                <div class="col-12">
+                    <h4>Filters</h4>
+                </div>
+            </div>
+            <div class="row center">
+                <div class="col"><b>Book Title</b></div>
+                <div class="col"><b>Author</b></div>
+                <div class="col"><b>Genre</b></div>
+                <div class="col"><b>Rating</b></div>
+                <div class="col"><b>Emotion</b></div>
+            </div>
+            <div class="row center">
+                <div class="col">
+                    <div class="input-group mb-3">
+                        <input id="book-title" type="text" class="form-control" placeholder="Enter book title" aria-label="Username" aria-describedby="basic-addon1">
+                      </div>
+                </div>
+                <div class="col">
+                    <div class="input-group mb-3">
+                        <input id="author-name" type="text" class="form-control" placeholder="Enter author's name" aria-label="Username" aria-describedby="basic-addon1">
+                      </div>
+                </div>
+                <div class="col">
+                    <select id="genre" class="form-select" aria-label="Default select example">
+                    <option selected value="">Default None</option>
+                  </select></div>
+                <div class="col">
+                    <select id="rating" class="form-select" aria-label="Default select example">
+                    <option value="" selected>Default None</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                  </select></div>
+                <div class="col">
+                    <select id="emotion" class="form-select" aria-label="Default select example">
+                    <option selected value="">Default None</option>
+                  </select></div>
+            </div>
+            <div class="row">
+                <div class="col-11"></div>
+                <div class="col-1">
+                    <input id="submit" class="right btn btn-primary" type="submit" value="Submit">
+                </div>
+            </div>
+            <hr/>
+            <div class="row">
+                <div  class="col-12">
+                    <div style="overflow-y:auto;" id="table-row">
+                    <table class="table table-striped">
+                        <tbody id="review-table">
+                        <tr>
+                            <th>title</th>
+                            <th>author</th>
+                            <th>genre</th>
+                            <th>rating</th>
+                            <th>review</th>
+                            <th>emotion</th>
+                        </tr>
+                    </tbody>
+                </div>
+                      </table>
+                </div>
+            </div>
+            <br>
+            <br>
+            <hr>
+            <br>
+            <br>
+    </div>
+          
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        <script src="static/backend.js"></script>
+    </body>
+    </html>

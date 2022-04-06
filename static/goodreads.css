@@ -1,0 +1,39 @@
+body {
+    background-color: rgba(241, 235, 220, 0.5);
+    max-height: 1000px;
+  }
+
+  h1 {
+    text-align:center;
+    /* color: #7fb27b; */
+}
+
+
+.main-content {
+        height: 100%;
+        width: 90%;
+        /* background-color: #7fb27b; */
+      }
+
+.review {
+    max-height: 100px;
+    /* background-color: #7fb27b; */
+     }
+
+.right{
+    margin-left: auto; 
+    margin-right: 0;
+}     
+
+#submit{
+  background-color: #7fb27b;
+  border-color: #7fb27b;
+}
+
+#table-row {
+  max-height: 600px;
+}
+
+#review-author{
+  height: 400px;
+}
