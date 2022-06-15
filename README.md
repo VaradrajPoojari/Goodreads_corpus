@@ -14,3 +14,9 @@ Make sure you have Docker.
 Please read the corpus description carefully.
 Please use the visualisations to examine the corpus statistics.
 Please test the app's search and filter features.
+
+# Page:
+
+![alt text](https://github.com/VaradrajPoojari/Goodreads_corpus/tree/main/static/img/Page1.jpg)
+![alt text](https://github.com/VaradrajPoojari/Goodreads_corpus/tree/main/static/img/Page2.jpg)
+![alt text](https://github.com/VaradrajPoojari/Goodreads_corpus/tree/main/static/img/review.png)
