@@ -17,6 +17,6 @@ Please test the app's search and filter features.
 
 # Page:
 
-![alt text](https://github.com/VaradrajPoojari/Goodreads_corpus/tree/main/static/img/Page1.jpg?raw=true)
-![alt text](https://github.com/VaradrajPoojari/Goodreads_corpus/tree/main/static/img/Page2.jpg?raw=true)
-![alt text](https://github.com/VaradrajPoojari/Goodreads_corpus/tree/main/static/img/review.png?raw=true)
+![Screenshot](https://github.com/VaradrajPoojari/Goodreads_corpus/tree/main/static/img/Page1.jpg?raw=true)
+![Screenshot](https://github.com/VaradrajPoojari/Goodreads_corpus/tree/main/static/img/Page2.jpg?raw=true)
+![Screenshot](https://github.com/VaradrajPoojari/Goodreads_corpus/tree/main/static/img/review.png?raw=true)
